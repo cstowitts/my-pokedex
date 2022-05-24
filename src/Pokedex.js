@@ -2,7 +2,7 @@ import React from "react";
 import './Pokedex.css';
 import Pokecard from './Pokecard'; 
 
-/** A collection of Pokecards
+/** A hand of Pokecards
  * 
  * Props:
  * - pokemonList: a list containing pokemon objects
@@ -15,7 +15,8 @@ import Pokecard from './Pokecard';
  * App -> Pokedex -> Pokecard
  */
 function Pokedex({ pokemonList }){
-    console.log("in Pokedex, line 18. pokemonList = ", pokemonList);
+    console.debug("In Pokedex, pokemonList = ", pokemonList);
+
     return (
         <div className="Pokedex container">
             {pokemonList.map(pokemon => <Pokecard pokemonData={pokemon}/>)}

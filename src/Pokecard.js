@@ -16,7 +16,8 @@ import './Pokecard.css';
  * Pokedex -> Pokecard
  */
 function Pokecard({ pokemonData }){
-
+    console.debug("In Pokecard, pokemonData: ", pokemonData);
+    
     return (
         <div className="Pokecard container" key={pokemonData.id}>
             <p className="pokecard poke-name">
